@@ -1,0 +1,153 @@
+.title2 {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 20px;
+}
+
+.left > h4 {
+  font-style: italic;
+  font-family: RobotoThin;
+}
+
+.right > h1 {
+  font-size: 3em;
+}
+
+.title2 > .left {
+  width: 30%;
+}
+
+.title2 > .right {
+  width: 70%;
+}
+
+.right > p {
+  margin-top: 2em;
+  line-height: 1.5em;
+}
+
+.services {
+  display: flex;
+  margin-top: 5em;
+}
+
+.service1 {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5em;
+  background-color: rgba(231, 235, 240, 0.178);
+  border-width: 1px;
+  border-collapse: collapse;
+}
+
+.service1:hover {
+  background-color: white;
+  cursor: pointer;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #ecf9ffa2;
+  border-bottom-color: #ecf9ffa2;
+  border-collapse: collapse;
+}
+
+.header {
+  display: flex;
+}
+
+.circle {
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 0.5em;
+  border-style: solid;
+  border-color: rgb(6, 167, 20);
+  border-radius: 999px 999px 999px 999px;
+}
+
+.service1 > h2 {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+}
+
+.service1 > p {
+  line-height: 1.5em;
+  color: dimgrey;
+  font-size: small;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
+.service1 > a {
+  text-decoration: none;
+  color: black;
+  font-family: RobotoBold;
+}
+
+.brands {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.brands > .h3 > h3 {
+  justify-content: center;
+  display: flex;
+  font-size: 2em;
+  text-align: center;
+  width: 35%;
+}
+
+.logos {
+  display: flex;
+  margin-top: 5em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10em;
+  opacity: 0.5;
+}
+
+.row2 {
+  margin-top: 5em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10em;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 500px) {
+  .title2 {
+    flex-direction: column;
+  }
+  .row1{
+    flex-direction: column;
+  }
+  .row2{
+    flex-direction: column;
+  }
+  .brands > .h3 > h3 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  .services {
+    flex-direction: column;
+  }
+}

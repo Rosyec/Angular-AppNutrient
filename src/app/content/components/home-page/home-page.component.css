@@ -1,0 +1,49 @@
+.content {
+  min-height: 90vh;
+  margin-top: 5em;
+}
+
+.images {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img1 {
+  width: 30%;
+  height: 600px;
+  background-image: url(../../../../assets/img/side-left.jpg);
+  background-size: cover;
+}
+
+.img1 > img {
+  width: 100%;
+}
+
+.img2 {
+  width: 70%;
+  height: 600px;
+  background-image: url(../../../../assets/img/side-right.jpg);
+  background-size: cover;
+}
+
+.img2 > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .images {
+    flex-direction: column;
+  }
+
+  .img1 {
+    width: 100%;
+  }
+
+  .img2 {
+    width: 100%;
+  }
+}

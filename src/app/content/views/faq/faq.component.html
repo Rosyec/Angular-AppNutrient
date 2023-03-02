@@ -1,0 +1,20 @@
+<div class="faq">
+  <h4 id="faq">03 ̶ FAQs</h4>
+  <h1>Still have questions? You will know us better below here</h1>
+  <div class="sub-content">
+    <div class="caja" *ngFor="let faq of items" (click)="onClickItem()">
+      <div class="content">
+        <div class="left">
+          <span>#</span>
+          <h3>{{ faq }}</h3>
+        </div>
+        <img src="../../../../assets/arrow-down-s-line.svg" alt="" />
+      </div>
+      <div class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error
+        fugit aliquid nisi, iste totam beatae magnam repellat quam veritatis
+        inventore, labore, ipsam earum qui dignissimos culpa ea fuga tempora.
+      </div>
+    </div>
+  </div>
+</div>
