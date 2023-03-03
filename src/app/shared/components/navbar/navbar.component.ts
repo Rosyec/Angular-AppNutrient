@@ -7,10 +7,31 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  public links: string[] = [];
+  public links: Links[] = [
+    {
+      url: '',
+      name: 'Home'
+    },
+    {
+      url: '#about-us',
+      name: 'About Us'
+    },
+    {
+      url: '#services',
+      name: 'Services'
+    },
+    {
+      url: '#faq',
+      name: 'FAQ'
+    },
+    {
+      url: '#blog',
+      name: 'Blog'
+    },
+  ];
   public toggle: boolean = false;
 
-  constructor() {}
+  constructor( private route: Router ) {}
 
   ngOnInit(): void {}
 
@@ -25,4 +46,14 @@ export class NavbarComponent implements OnInit {
       }
     }
   }
+
+  onClickNav( url: string ){
+    this.onClickLink();
+    this.route.navigateByUrl(url);
+  }
+}
+
+interface Links {
+  url: string,
+  name: string
 }

@@ -6,29 +6,27 @@
       </div>
       <div class="list" id="list">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li *ngFor="let nav of links" (click)="onClickNav(nav.url)">
+            <a> {{ nav.name }} </a>
+          </li>
         </ul>
       </div>
     </div>
     <div class="fila">
       <a href="" class="brand">Nutrient</a>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li *ngFor="let nav of links">
+          <a [href]="nav.url"> {{ nav.name }} </a>
+        </li>
       </ul>
       <a href="">Enterprise Solution <i class="bi bi-arrow-up-right"></i></a>
     </div>
   </nav>
   <div class="excibition">
     <div class="publish">
-      <h1>Connection end-to-end agriculture solution to help the world thrive</h1>
+      <h1>
+        Connection end-to-end agriculture solution to help the world thrive
+      </h1>
     </div>
     <div class="description">
       <h5>
@@ -44,8 +42,8 @@
 
   <div class="options">
     <div class="more">
-      <a href="#about-us"><i class="bi bi-arrow-down-circle-fill"></i></a>Get to know
-      more about us
+      <a href="#about-us"><i class="bi bi-arrow-down-circle-fill"></i></a>Get to
+      know more about us
     </div>
     <div class="info">
       <small>We have managed area on </small>

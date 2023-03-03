@@ -191,6 +191,7 @@ small {
     .list > ul > li {
         padding-left: 0.5em;
         padding: 1em;
+        cursor: pointer;
     }
 
     .list > ul > li:hover {

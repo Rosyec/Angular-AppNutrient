@@ -1,0 +1,76 @@
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr {
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 1 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-family: RobotoLight;
+}
+
+a {
+    font-family: RobotoLight;
+    color: dimgray;
+}
+
+span {
+    font-family: RobotoLight;
+}
+
+.politic {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redes {
+    display: flex;
+    gap: 1em;
+}
+
+.policy {
+    display: flex;
+    gap: 2em;
+}
+
+img {
+    width: 1em;
+    height: 1em;
+}
+
+@media only screen and (max-widht: 705px) {
+    .politic {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
